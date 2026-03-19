@@ -1,6 +1,6 @@
-# PortofolioFrontend
+# Portfolio Frontend
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.1.
+A modern Angular portfolio website showcasing full-stack development skills with Java 21 Spring Boot and Angular 18.
 
 ## Development server
 
@@ -34,7 +34,31 @@ To build the project run:
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+This will compile your project and store the build artifacts in the `dist/portofolio-frontend` directory. By default, the production build optimizes your application for performance and speed.
+
+**Latest build stats:**
+
+- Main bundle: 216.17 kB (59.63 kB gzipped)
+- Styles: 27.04 kB (4.47 kB gzipped)
+- Total: 243.21 kB (64.10 kB gzipped)
+
+## Serving the production build
+
+After building, you cannot open `index.html` directly in the browser due to Angular's client-side routing. Instead, serve the built files using a static web server:
+
+```bash
+# Using Python (built-in)
+cd dist/portofolio-frontend/browser
+python -m http.server 8080
+
+# Or using Node.js http-server
+npx http-server dist/portofolio-frontend/browser -p 8080 -o
+
+# Or using Angular CLI (for development)
+ng serve --configuration production
+```
+
+Then open `http://localhost:8080` in your browser.
 
 ## Running unit tests
 
