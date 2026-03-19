@@ -1,6 +1,7 @@
 {
   "name": "portofolio-frontend",
   "version": "0.0.0",
+  
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,6 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
+  
   "private": true,
   "packageManager": "npm@11.9.0",
   "dependencies": {
@@ -34,4 +36,5 @@
     "typescript": "~5.9.2",
     "vitest": "^4.0.8"
   }
+  
 }
